@@ -1,0 +1,73 @@
+{
+  "k": 5,
+  "cases": [
+    {
+      "pregunta": "¿Cómo leer un archivo de texto UTF-8 usando Path?",
+      "recuperados": [
+        "python-pathlib",
+        "python-csv",
+        "python-json",
+        "python-logging",
+        "python-asyncio"
+      ],
+      "precision": 0.2,
+      "recall": 1.0,
+      "hits": 1
+    },
+    {
+      "pregunta": "¿Cómo convertir una cadena JSON y detectar JSONDecodeError?",
+      "recuperados": [
+        "python-json",
+        "python-csv",
+        "python-asyncio",
+        "python-sqlite3",
+        "python-pathlib"
+      ],
+      "precision": 0.2,
+      "recall": 1.0,
+      "hits": 1
+    },
+    {
+      "pregunta": "¿Cómo registrar eventos con niveles INFO y ERROR?",
+      "recuperados": [
+        "python-logging",
+        "python-datetime",
+        "python-csv",
+        "python-sqlite3",
+        "python-pathlib"
+      ],
+      "precision": 0.2,
+      "recall": 1.0,
+      "hits": 1
+    },
+    {
+      "pregunta": "¿Cómo limitar operaciones concurrentes con asyncio.Semaphore?",
+      "recuperados": [
+        "python-asyncio",
+        "python-csv",
+        "python-sqlite3",
+        "python-unittest",
+        "python-logging"
+      ],
+      "precision": 0.2,
+      "recall": 1.0,
+      "hits": 1
+    },
+    {
+      "pregunta": "¿Cómo evitar inyección SQL usando placeholders en sqlite3?",
+      "recuperados": [
+        "python-sqlite3",
+        "python-csv",
+        "python-datetime",
+        "python-unittest",
+        "python-asyncio"
+      ],
+      "precision": 0.2,
+      "recall": 1.0,
+      "hits": 1
+    }
+  ],
+  "precision": 0.2,
+  "recall": 1.0,
+  "mode": "lexical"
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "document_id": "python-pathlib",
+    "categories": [
+      "archivos",
+      "python"
+    ],
+    "page": 1,
+    "text": "pathlib: rutas y archivos\n\nPath representa rutas de archivos y directorios. Path.read_text(encoding=\"utf-8\") lee contenido Unicode y Path.write_text guarda texto. Path.exists permite verificar existencia y Path.is_file distingue archivos. Path.mkdir(parents=True, exist_ok=True) crea directorios faltantes. Para recorrer archivos usar Path.glob o Path.rglob. Usar rutas configurables y validar que estén dentro del directorio permitido antes de escribir. Una lectura puede fallar con FileNotFoundError o PermissionError.\n\nReferencia oficial: https://docs.python.org/3/library/pathlib.html"
+  },
+  {
+    "document_id": "python-json",
+    "categories": [
+      "serializacion",
+      "python"
+    ],
+    "page": 1,
+    "text": "json: serialización y validación\n\njson.loads convierte una cadena JSON en objetos Python y json.dumps convierte objetos a texto JSON. json.load y json.dump trabajan con archivos. ensure_ascii=False conserva caracteres españoles; indent=2 mejora la legibilidad. JSONDecodeError indica un documento JSON mal formado. Una lista de registros debe validarse después de parsear: el parseo no verifica columnas obligatorias ni reglas del negocio. No utilizar eval para interpretar JSON.\n\nReferencia oficial: https://docs.python.org/3/library/json.html"
+  },
+  {
+    "document_id": "python-logging",
+    "categories": [
+      "observabilidad",
+      "python"
+    ],
+    "page": 1,
+    "text": "logging: trazabilidad de procesos\n\nEl módulo logging registra eventos con niveles DEBUG, INFO, WARNING, ERROR y CRITICAL. logging.getLogger(__name__) crea un logger por módulo. basicConfig configura formato, nivel y destino. Para un proceso por lotes registrar inicio, fin, cantidad procesada y errores sin incluir contraseñas ni datos personales. logger.exception agrega traceback dentro de un manejador de excepciones y debe usarse solamente en destinos controlados.\n\nReferencia oficial: https://docs.python.org/3/library/logging.html"
+  },
+  {
+    "document_id": "python-asyncio",
+    "categories": [
+      "concurrencia",
+      "python"
+    ],
+    "page": 1,
+    "text": "asyncio: concurrencia de entrada y salida\n\nasyncio permite ejecutar tareas concurrentes con async y await. asyncio.gather espera varios awaitables y devuelve resultados en el orden de entrada. asyncio.Semaphore limita el número de operaciones concurrentes, útil ante límites de APIs. asyncio.run inicia un programa asíncrono desde una entrada sin un event loop activo. Una llamada bloqueante dentro de una coroutine bloquea el event loop; para entrada y salida bloqueante se puede usar asyncio.to_thread.\n\nReferencia oficial: https://docs.python.org/3/library/asyncio-task.html"
+  },
+  {
+    "document_id": "python-sqlite3",
+    "categories": [
+      "bases-datos",
+      "python"
+    ],
+    "page": 1,
+    "text": "sqlite3: transacciones y parámetros\n\nsqlite3 conecta Python con una base SQLite mediante sqlite3.connect. Las consultas deben usar parámetros con placeholders ? para valores y no concatenación de cadenas del usuario. connection.commit confirma una transacción y rollback revierte cambios no confirmados. El contexto de conexión puede confirmar o revertir según haya excepción, pero no cierra automáticamente la conexión. Una restricción UNIQUE sirve para evitar registros duplicados.\n\nReferencia oficial: https://docs.python.org/3/library/sqlite3.html"
+  },
+  {
+    "document_id": "python-unittest",
+    "categories": [
+      "pruebas",
+      "python"
+    ],
+    "page": 1,
+    "text": "unittest: pruebas y dobles\n\nunittest.TestCase agrupa casos de prueba. assertEqual compara resultados y assertRaises valida excepciones esperadas. unittest.mock.patch reemplaza un objeto en el módulo donde se usa. Un Mock permite simular una API sin red y verificar llamadas. Los tests unitarios con mocks verifican lógica aislada; no demuestran que las credenciales o el servicio externo real funcionen.\n\nReferencia oficial: https://docs.python.org/3/library/unittest.html"
+  },
+  {
+    "document_id": "python-csv",
+    "categories": [
+      "archivos",
+      "python"
+    ],
+    "page": 1,
+    "text": "csv: lectura tabular\n\ncsv.DictReader lee cada fila de un CSV como diccionario usando encabezados. DictWriter escribe registros con fieldnames definidos. Abrir el archivo con newline=\"\" y una codificación explícita. El delimitador puede ser coma o punto y coma y debe configurarse según la fuente. Las celdas se leen como cadenas: validar nulos y convertir números y fechas explícitamente.\n\nReferencia oficial: https://docs.python.org/3/library/csv.html"
+  },
+  {
+    "document_id": "python-datetime",
+    "categories": [
+      "fechas",
+      "python"
+    ],
+    "page": 1,
+    "text": "datetime: fechas y zonas horarias\n\ndatetime representa fechas y horas. datetime.fromisoformat interpreta cadenas ISO 8601. Un datetime naive carece de zona horaria; uno aware contiene tzinfo. zoneinfo.ZoneInfo permite usar zonas IANA como America/Argentina/Buenos_Aires. Para comparar eventos de sistemas distintos normalizar a UTC conservando el dato original cuando sea necesario. strftime formatea fechas y strptime interpreta un formato explícito.\n\nReferencia oficial: https://docs.python.org/3/library/datetime.html"
+  }
+]

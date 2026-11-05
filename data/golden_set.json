@@ -1,0 +1,37 @@
+[
+  {
+    "pregunta": "¿Cómo leer un archivo de texto UTF-8 usando Path?",
+    "documento_id_esperado": "python-pathlib",
+    "documentos_relevantes": [
+      "python-pathlib"
+    ]
+  },
+  {
+    "pregunta": "¿Cómo convertir una cadena JSON y detectar JSONDecodeError?",
+    "documento_id_esperado": "python-json",
+    "documentos_relevantes": [
+      "python-json"
+    ]
+  },
+  {
+    "pregunta": "¿Cómo registrar eventos con niveles INFO y ERROR?",
+    "documento_id_esperado": "python-logging",
+    "documentos_relevantes": [
+      "python-logging"
+    ]
+  },
+  {
+    "pregunta": "¿Cómo limitar operaciones concurrentes con asyncio.Semaphore?",
+    "documento_id_esperado": "python-asyncio",
+    "documentos_relevantes": [
+      "python-asyncio"
+    ]
+  },
+  {
+    "pregunta": "¿Cómo evitar inyección SQL usando placeholders en sqlite3?",
+    "documento_id_esperado": "python-sqlite3",
+    "documentos_relevantes": [
+      "python-sqlite3"
+    ]
+  }
+]
